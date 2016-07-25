@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all clean -p build",
+    "build": "node scripts/build.js",
+    "clean": "rimraf build/**.**"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^3.7.2",
     "postcss": "^5.1.0",
-    "postcss-reporter": "^1.4.1",
-    "postcss-scss": "^0.1.8",
-    "postcss-utilities": "^0.2.0",
-    "precss": "^1.4.0",
     "stylelint": "^6.9.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "npm-run-all": "^2.3.0",
+    "rimraf": "^2.5.4"
   }
 }
