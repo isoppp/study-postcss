@@ -2,6 +2,7 @@ const fs = require('fs');
 const postcss = require('postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const stylelint = require('stylelint');
 const autoprefixOption = [
   'ie >= 9',
   'ff >= 34',
@@ -14,6 +15,7 @@ const glob = require('glob');
 
 const postcssPlugins = [
   autoprefixer(autoprefixOption),
+  stylelint(),
   cssnano()
 ];
 
