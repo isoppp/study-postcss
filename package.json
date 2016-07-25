@@ -10,14 +10,12 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "cssnano": "^3.7.2",
-    "postcss": "^5.1.0",
-    "stylelint": "^6.9.0"
-  },
   "dependencies": {
     "autoprefixer": "^6.3.7",
     "npm-run-all": "^2.3.0",
     "rimraf": "^2.5.4"
+    "cssnano": "^3.7.2",
+    "postcss": "^5.1.0",
+    "stylelint": "^6.9.0"
   }
 }
